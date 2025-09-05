@@ -1,0 +1,12 @@
+{
+  "id": "b1",
+  "title": "Beginner 1 - Basic Consonants",
+  "level": "beginner",
+  "lines": [
+    "ကခဂဃင",
+    "စဆဇဈည",
+    "ဋဌဍဎဏ"
+  ],
+  "speedTargetWpm": 15,
+  "accuracyTarget": 0.90
+}

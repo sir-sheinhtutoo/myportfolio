@@ -1,0 +1,12 @@
+{
+  "id": "b4",
+  "title": "Beginner 4 - Numbers and Punctuation",
+  "level": "beginner",
+  "lines": [
+    "၁ ၂ ၃ ၄ ၅",
+    "၆ ၇ ၈ ၉ ၀",
+    "။ ၊ း ့"
+  ],
+  "speedTargetWpm": 22,
+  "accuracyTarget": 0.92
+}

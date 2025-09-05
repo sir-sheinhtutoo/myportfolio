@@ -1,0 +1,12 @@
+{
+  "id": "i1",
+  "title": "Intermediate 1 - Complex Vowels",
+  "level": "intermediate",
+  "lines": [
+    "ကုံ ကံ့ ကွေး ကြေး",
+    "မုံ မံ့ မွေး မြေး",
+    "သုံ သံ့ သွေး သြေး"
+  ],
+  "speedTargetWpm": 30,
+  "accuracyTarget": 0.94
+}

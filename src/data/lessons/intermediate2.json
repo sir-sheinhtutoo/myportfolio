@@ -1,0 +1,12 @@
+{
+  "id": "i2",
+  "title": "Intermediate 2 - Stacked Consonants",
+  "level": "intermediate",
+  "lines": [
+    "က္က က္ခ က္ဂ",
+    "မ္မ မ္န မ္လ",
+    "သ္သ သ္စ သ္တ"
+  ],
+  "speedTargetWpm": 32,
+  "accuracyTarget": 0.94
+}

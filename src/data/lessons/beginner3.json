@@ -1,0 +1,12 @@
+{
+  "id": "b3",
+  "title": "Beginner 3 - Basic Vowels",
+  "level": "beginner",
+  "lines": [
+    "ကာကါကေကို",
+    "မာမါမေမို",
+    "သာသါသေသို"
+  ],
+  "speedTargetWpm": 20,
+  "accuracyTarget": 0.92
+}
