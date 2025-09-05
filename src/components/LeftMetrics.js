@@ -4,7 +4,7 @@ import { calculateWPM, calculateErrorRate } from '../utils/myanmar3';
 
 const LeftMetrics = () => {
   const { state, dispatch } = useAppContext();
-  const { startTime, typedText, mistakes, wpm, errorRate, isLessonActive } = state;
+  const { startTime, typedText, mistakes, wpm, isLessonActive } = state;
 
   useEffect(() => {
     if (!isLessonActive || !startTime) return;

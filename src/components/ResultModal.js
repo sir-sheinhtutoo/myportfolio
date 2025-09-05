@@ -80,7 +80,7 @@ const ResultModal = () => {
     }, 3000);
 
     return () => clearTimeout(timer);
-  }, [showResultModal]);
+  }, [showResultModal, handleNextAction]);
 
   if (!showResultModal) return null;
 

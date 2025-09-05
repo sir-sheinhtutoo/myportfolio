@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
-import { useAppContext, ACTIONS } from '../store';
-import { calculateWPM, calculateErrorRate } from '../utils/myanmar3';
+import React from 'react';
+import { useAppContext } from '../store';
 
 const RightMetrics = () => {
   const { state } = useAppContext();

@@ -3,7 +3,7 @@ import { useAppContext, ACTIONS } from '../store';
 
 const LevelCompleteModal = () => {
   const { state, dispatch } = useAppContext();
-  const { showLevelCompleteModal, selectedLevel } = state;
+  const { showLevelCompleteModal } = state;
 
   if (!showLevelCompleteModal) return null;
 

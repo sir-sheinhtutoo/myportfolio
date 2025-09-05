@@ -1,9 +1,9 @@
 import React from 'react';
-import { useAppContext, ACTIONS } from '../store';
+import { useAppContext } from '../store';
 import { convertToDisplayOrder } from '../utils/myanmar3';
 
 const TypingPanel = () => {
-  const { state, dispatch } = useAppContext();
+  const { state } = useAppContext();
   const { targetText, typedText, currentPosition, hasError, errorMessage } = state;
 
   const renderLessonText = () => {
