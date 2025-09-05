@@ -11,7 +11,7 @@
   [![PWA](https://img.shields.io/badge/PWA-Ready-brightgreen?style=for-the-badge)](https://web.dev/progressive-web-apps/)
   [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://github.com/sir-sheinhtutoo/projects/tree/main/myanmar-typing-tutor/blob/main/LICENSE)
   
-  [🚀 Live Demo](https://myanmar-typing-tutor.vercel.app) | [📱 Install as App](https://myanmar-typing-tutor.vercel.app) | [🐛 Report Bug](https://github.com/sir-sheinhtutoo/projects/issues)
+  [🚀 Live Demo](https://myanmartypingtutor.netlify.app/) | [📱 Install as App](https://myanmartypingtutor.netlify.app/)
 </div>
 
 ---
@@ -56,7 +56,7 @@
 <img src="https://via.placeholder.com/300x600/1f2937/ffffff?text=Mobile+Screenshot+Coming+Soon" alt="Mobile View" width="300"/>
 
 ### Live Demo
-🎮 **[Try it now →](https://myanmar-typing-tutor.vercel.app)**
+🎮 **[Try it now →](https://myanmartypingtutor.netlify.app/)**
 
 </div>
 
@@ -85,33 +85,6 @@
 ### Prerequisites
 - Node.js 16+ and npm
 - Modern web browser with JavaScript enabled
-
-### Installation & Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/sir-sheinhtutoo/projects.git
-   cd projects/myanmar-typing-tutor
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm start
-   ```
-
-4. **Open in browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
-
-### Build for Production
-```bash
-npm run build
-npm run serve  # Preview production build
-```
 
 ## 📚 How to Use
 
@@ -202,7 +175,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 *Building digital solutions that bridge cultures and communities*
 
-**🌟 [View More Projects](https://github.com/sir-sheinhtutoo/projects)**
+**🌟 [View More Projects](https://github.com/sir-sheinhtutoo/myportfolio)**
 
 </div>
 
