@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { useAppContext, ACTIONS } from '../store';
 
 const ResultModal = () => {
@@ -19,7 +19,7 @@ const ResultModal = () => {
     dispatch({ type: ACTIONS.START_LESSON });
   };
 
-  const handleNextAction = () => {
+  const handleNextAction = useCallback(() => {
     dispatch({ type: ACTIONS.HIDE_RESULT_MODAL });
     
     const safeCurrentRepetition = Math.min(currentRepetition || 0, maxRepetitions || 5);
@@ -49,7 +49,7 @@ const ResultModal = () => {
       // Continue with same lesson
       dispatch({ type: ACTIONS.START_LESSON });
     }
-  };
+  }, [dispatch, currentRepetition, maxRepetitions, lessons, selectedLevel, currentLesson]);
 
   const getPerformanceLevel = () => {
     if (!currentLesson) return { level: 'Good', color: 'blue' };
