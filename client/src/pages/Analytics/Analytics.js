@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { 
   BarChart3, 
   TrendingUp, 
@@ -25,11 +25,7 @@ const Analytics = () => {
     chartType: 'pie'
   });
 
-  useEffect(() => {
-    fetchAnalyticsData();
-  }, [filters, fetchAnalyticsData]);
-
-  const fetchAnalyticsData = async () => {
+  const fetchAnalyticsData = useCallback(async () => {
     try {
       setLoading(true);
       
@@ -54,7 +50,11 @@ const Analytics = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [filters]);
+
+  useEffect(() => {
+    fetchAnalyticsData();
+  }, [fetchAnalyticsData]);
 
   const getPeriodMonths = (period) => {
     switch (period) {

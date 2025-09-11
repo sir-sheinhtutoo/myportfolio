@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   PlusCircle, 
@@ -31,11 +31,7 @@ const Expenses = () => {
   const [pagination, setPagination] = useState({});
   const [showFilters, setShowFilters] = useState(false);
 
-  useEffect(() => {
-    fetchExpenses();
-  }, [filters, fetchExpenses]);
-
-  const fetchExpenses = async () => {
+  const fetchExpenses = useCallback(async () => {
     try {
       setLoading(true);
       const params = new URLSearchParams();
@@ -53,7 +49,11 @@ const Expenses = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [filters]);
+
+  useEffect(() => {
+    fetchExpenses();
+  }, [fetchExpenses]);
 
   const handleFilterChange = (newFilters) => {
     setFilters({

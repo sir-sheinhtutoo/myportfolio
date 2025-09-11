@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { User, Settings, Bell, Shield, Save } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 import axios from 'axios';
@@ -19,11 +19,7 @@ const Profile = () => {
     }
   });
 
-  useEffect(() => {
-    fetchProfile();
-  }, [fetchProfile]);
-
-  const fetchProfile = async () => {
+  const fetchProfile = useCallback(async () => {
     try {
       setLoading(true);
       const response = await axios.get('/api/auth/profile');
@@ -35,7 +31,11 @@ const Profile = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [preferences]);
+
+  useEffect(() => {
+    fetchProfile();
+  }, [fetchProfile]);
 
   const savePreferences = async () => {
     try {
