@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { format } from 'date-fns';
-import { Edit, Trash2, MoreHorizontal, Tag } from 'lucide-react';
+import { Edit, Trash2, Tag } from 'lucide-react';
 import LoadingSpinner from '../UI/LoadingSpinner';
 
 const ExpenseList = ({ expenses, loading, onDelete, onEdit }) => {

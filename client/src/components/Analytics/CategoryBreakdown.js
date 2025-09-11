@@ -1,5 +1,4 @@
 import React from 'react';
-import { TrendingUp, TrendingDown, Minus } from 'lucide-react';
 
 const CategoryBreakdown = ({ breakdown }) => {
   if (!breakdown || breakdown.length === 0) {
@@ -26,11 +25,6 @@ const CategoryBreakdown = ({ breakdown }) => {
     'Others': 'bg-gray-500'
   };
 
-  const getTrendIcon = (percentage) => {
-    if (percentage > 5) return <TrendingUp className="w-4 h-4 text-red-500" />;
-    if (percentage < -5) return <TrendingDown className="w-4 h-4 text-green-500" />;
-    return <Minus className="w-4 h-4 text-gray-400" />;
-  };
 
   return (
     <div className="space-y-3">

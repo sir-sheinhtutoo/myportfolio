@@ -27,7 +27,7 @@ const Analytics = () => {
 
   useEffect(() => {
     fetchAnalyticsData();
-  }, [filters]);
+  }, [filters, fetchAnalyticsData]);
 
   const fetchAnalyticsData = async () => {
     try {

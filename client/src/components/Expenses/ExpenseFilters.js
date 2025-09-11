@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, Tag, DollarSign } from 'lucide-react';
+import { Calendar, Tag } from 'lucide-react';
 
 const ExpenseFilters = ({ filters, onFilterChange }) => {
   const categories = [

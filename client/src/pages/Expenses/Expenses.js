@@ -33,7 +33,7 @@ const Expenses = () => {
 
   useEffect(() => {
     fetchExpenses();
-  }, [filters]);
+  }, [filters, fetchExpenses]);
 
   const fetchExpenses = async () => {
     try {
